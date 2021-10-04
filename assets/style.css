@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-image: url("https://picsum.photos/700/400?random");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.portada{
+    
+    justify-content: center;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-height: 100vh;
+}
+
+.name{
+    text-align: center;
+    padding: 1rem 1rem 0 1rem;
+    color: rgb(240, 165, 0);
+
+}
+
+.subtitulo{
+    text-align: center;
+    padding: .30rem;
+    color: #ffffff;
+}
+
+button{
+    display: flex;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    padding: 5px 10px 5px 10px;
+    
+    background-color: #ffffff44;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+h2{
+    margin: 1rem;
+    text-align: center;
+}
+
+img{
+    width: 20%;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.bio{
+    margin: 2rem;
+    color: aliceblue;
+    font-weight: 50;
+    text-align: center;
+}
