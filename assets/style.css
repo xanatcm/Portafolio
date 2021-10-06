@@ -9,21 +9,21 @@
 }
 
 body{
-    background-image: url("https://picsum.photos/700/400?random");
+    background-color: coral;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
 
 }
 
 .portada{
     
+    display: flex;
     justify-content: center;
-    align-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -41,6 +41,7 @@ body{
 }
 
 button{
+    
     display: flex;
     margin-top: 1rem;
     margin-right: auto;
@@ -59,6 +60,7 @@ button{
 }
 
 .about{
+    
     display: flex;
     flex-direction: column;
     
