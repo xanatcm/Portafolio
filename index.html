@@ -8,12 +8,8 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <div class="portada">
-        <h1 class="name">Xanat Casandra</h1>
-            <p class="subtitulo">Web developer</p>
-        <button>Portafolio</button>
-    </div>
 
+    
     <nav class="nav">
         <div class="nav-container">
             <h1 class="nav-logo">XanatCM</h1>
@@ -30,69 +26,96 @@
             </div>
         </div>
     </nav>
-    
-    
-    <div class="about">
-        <h2>Sobre mi</h2>
-        <img src="./assets/images/IMG_20210125_122411.jpg" alt="">
-        <p class="bio">Soy Xanat, Diseñadora y Desarrolladora Web en formación. He trabajado en diversos proyectos de diseño.</p>
 
+    <div class="portada">
+        <h1 class="name">Xanat Casandra</h1>
+            <p class="subtitulo">Web developer</p> 
+        <a href="#portfolio" class="btn-cover">Portafolio</a>
+        
     </div>
 
-    <div>
-        <h4 class="skills">Skills</h4>
-        <div class="skills-menu">
-            <div class="bar-flex">
-                <div class="fill" style="width:30%">
-                    <div class="tag">JavaScript</div>
+    <div class="about-container">
+        <div class="about">
+            <h2>Sobre mi</h2>
+            <img src="./assets/images/IMG_20210125_122411.jpg" alt="" class="img-personal">
+            <p class="bio">
+                Soy Xanat, Diseñadora y Desarrolladora Web en formación. He trabajado en diversos proyectos de diseño. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae molestias vel autem beatae iste qui nostrum facere molestiae incidunt veniam excepturi, eos officia officiis voluptas, est eaque ratione nobis laboriosam!
+                Incidunt vero doloribus veniam!
+            </p>
+        </div>
+
+        <div class="skills-div">
+            <div class="skills-menu">
+                <div class="bar-flex">
+                    <div class="fill" style="width:30%">
+                        <div class="tag">JavaScript</div>
+                    </div>
+            <span class="tag-2">30%</span>
                 </div>
-        <span class="tag-2">30%</span>
-            </div>
-            <div class="bar-flex">
-                <div class="fill" style="width: 30%;">
-                    <div class="tag">CSS</div>
+                <div class="bar-flex">
+                    <div class="fill" style="width: 30%;">
+                        <div class="tag">CSS</div>
+                    </div>
+            <span class="tag-2">30%</span>
                 </div>
-        <span class="tag-2">30%</span>
-            </div>
-            <div class="bar-flex">
-                <div class="fill" style="width: 30%;">
-                    <div class="tag">HTML</div>
+                <div class="bar-flex">
+                    <div class="fill" style="width: 30%;">
+                        <div class="tag">HTML</div>
+                    </div>
+            <span class="tag-2">30%</span>
                 </div>
-        <span class="tag-2">30%</span>
-            </div>
-            <div class="bar-flex">
-                <div class="fill" style="width: 90%;">
-                    <div class="tag">Illustrator</div>
+                <div class="bar-flex">
+                    <div class="fill" style="width: 90%;">
+                        <div class="tag">Illustrator</div>
+                    </div>
+            <span class="tag-2">90%</span>
                 </div>
-        <span class="tag-2">90%</span>
-            </div>
-            <div class="bar-flex">
-                <div class="fill" style="width: 90%;">
-                    <div class="tag">Photoshop</div>
+                <div class="bar-flex">
+                    <div class="fill" style="width: 90%;">
+                        <div class="tag">Photoshop</div>
+                    </div>
+            <span class="tag-2">90%</span>
                 </div>
-        <span class="tag-2">90%</span>
-            </div>
-            <div class="bar-flex">
-                <div class="fill" style="width: 70%;">
-                    <div class="tag">InDesign</div>
+                <div class="bar-flex">
+                    <div class="fill" style="width: 70%;">
+                        <div class="tag">InDesign</div>
+                    </div>
+            <span class="tag-2">70%</span>
                 </div>
-        <span class="tag-2">70%</span>
-            </div>
-            <div class="bar-flex">
-                <div class="fill" style="width: 60%;">
-                    <div class="tag">Premiere</div>
+                <div class="bar-flex">
+                    <div class="fill" style="width: 60%;">
+                        <div class="tag">Premiere</div>
+                    </div>
+            <span class="tag-2">60%</span>
                 </div>
-        <span class="tag-2">60%</span>
             </div>
+
         </div>
 
     </div>
 
-
-    <div>
+    <div id="portfolio">
         <h4 class="portafolio">Portafolio</h4>
         
         <div class="galeria">
+            <div class="card">
+                <img src="./assets/images/foto1.png" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/images/foto2.png" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/images/foto3.png" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/images/foto4.png" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/images/foto5.png" alt="">
+            </div>
+            <div class="card">
+                <img src="./assets/images/foto6.png" alt="">
+            </div>
             <div class="card">
                 <img src="./assets/images/foto1.png" alt="">
             </div>
@@ -106,31 +129,36 @@
         
     </div>
 
-    <div class="contacto">
+    <div class="contacto" >
         <h4>Contacto</h4>
-        <div class="formulario">
-            <input type="text" id="name" placeholder="Nombre">
+        <form class="formulario" action="https://formspree.io/f/mqkwjvzk" method="POST">
             
-            <input type="email" id="email" placeholder="Correo">
+            <input type="text" id="name" placeholder="Nombre" name="name">
             
-            <textarea name="message" id="mensaje" placeholder="Tú mensaje"></textarea>
+            <input type="email" id="email" placeholder="Correo" name="_replyto">
             
-            <input type="submit" value="Enviar" class="boton">
-        </div>
+            <textarea name="message" cols="20" rows="10" id="mensaje" placeholder="Tú mensaje"></textarea>
+            
+            <button type="submit" class="boton">Enviar</button>
+                
+        </form>
         
     </div>
 
     <footer>
-        <a href="" class="linked-in">
-            <img src="./assets/images/linked-in.svg" alt="">
-        </a>
-        <a href="" class="git-hub">
-            <img src="./assets/images/git-hub.svg" alt="">
-        </a>
-        <a href="" class="instagram">
-            <img src="./assets/images/instagram.svg" alt="">
-        </a>
-        <p>XANAT CASANDRA 2021</p>
+        <div>
+            <a href="https://www.linkedin.com/in/xanat-casandra-0a08a9205/" class="linked-in" target="_blank">
+                <img src="./assets/images/linked-in.svg" alt="">
+            </a>
+            <a href="https://github.com/xanatcm" class="git-hub" target="_blank">
+                <img src="./assets/images/git-hub.svg" alt="">
+            </a>
+            <a href="" class="instagram">
+                <img src="./assets/images/instagram.svg" alt="">
+            </a>
+        </div>    
+        
+        <p class="name-ref">Xanat Casandra 2021</p>
     </footer>
 
 
