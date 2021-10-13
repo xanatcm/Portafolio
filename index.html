@@ -17,24 +17,33 @@
                 <img src="./assets/images/menu.svg" alt="bx-menu" class="nav-img">
             </label>
             <input type="checkbox" id="menu" class="nav-input">
-        
+
             <div class="nav-menu">
-                <a href="" class="nav-item">Inicio</a>
-                <a href="" class="nav-item">Sobre mi</a>
-                <a href="" class="nav-item">Portafolio</a>
-                <a href="" class="nav-item">Contacto</a>
+                <a href="#cover" class="nav-item">Inicio</a>
+                <a href="#about-me" class="nav-item">Sobre mi</a>
+                <a href="#portfolio" class="nav-item">Portafolio</a>
+                <a href="#contact-me" class="nav-item">Contacto</a>
             </div>
+        
+            <div class="nav-desk">
+                <a href="#cover" class="nav-item-desk">Inicio</a>
+                <a href="#about-me" class="nav-item-desk">Sobre mi</a>
+                <a href="#portfolio" class="nav-item-desk">Portafolio</a>
+                <a href="#contact-me" class="nav-item-desk">Contacto</a>
+            </div>
+            
+            
         </div>
     </nav>
 
-    <div class="portada">
+    <div class="portada" id="cover">
         <h1 class="name">Xanat Casandra</h1>
             <p class="subtitulo">Web developer</p> 
         <a href="#portfolio" class="btn-cover">Portafolio</a>
         
     </div>
 
-    <div class="about-container">
+    <div class="about-container" id="about-me">
         <div class="about">
             <h2>Sobre mi</h2>
             <img src="./assets/images/IMG_20210125_122411.jpg" alt="" class="img-personal">
@@ -129,7 +138,7 @@
         
     </div>
 
-    <div class="contacto" >
+    <div class="contacto" id="contact-me" >
         <h4>Contacto</h4>
         <form class="formulario" action="https://formspree.io/f/mqkwjvzk" method="POST">
             
@@ -161,6 +170,7 @@
         <p class="name-ref">Xanat Casandra 2021</p>
     </footer>
 
+    <script src="./assets/main.js"></script>
 
 </body>
 </html>

@@ -24,25 +24,31 @@ body{
     width: 100%;
     
     position: fixed;
+    z-index: 100;
     
+}
+
+.nav-desk{
+    display: none;
 }
 
 .nav-input{
     display: none;
 }
 
+
 .nav-menu{
     position: fixed;
-    top: 80px;
+    top: 79.3px;
     bottom: 0;
-    background: rgb(116, 116, 218);
+    background: rgb(73, 71, 177);
     width: 100%;
     right: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-right: 2.5rem;
+    
     clip-path: circle(0 at center);
     transition: clip-path 1s ease-in-out;
 }
@@ -50,6 +56,7 @@ body{
 .nav-input:checked + .nav-menu{
     clip-path: circle(100% at center);
 }
+
 
 .nav-container{
     display: flex;
@@ -72,20 +79,16 @@ body{
     color: #ffffff;
 }
 
-
-
 .nav-item{
     color:#ffffff;
     text-decoration: none;
+    margin: 2rem;
 }
 .nav-label{
     display: block;
     
 }
 
-/*.nav-label, .nav-input{
-    display: none;
-}*/
 
 
 .portada{
@@ -361,27 +364,32 @@ div>a>img{
 @media only screen and (min-width:992px){
     
     .nav-container{
-        display: flex;
+        
         height: 100%;
         width: 90%;
         margin: auto;
-        justify-content: space-between;
+        
         align-items: center;
     }
 
     .nav-menu{
+        display: none;
+    }
+    
+    .nav-desk{
         display: flex;
         justify-content: space-between;
     }
 
-    .nav-item{
+    .nav-item-desk{
         color:#ffffff;
         text-decoration: none;
         --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
         transition: clip-path .3s;
+        margin: 1rem;
     }
     
-    .nav-item::after{
+    .nav-item-desk::after{
         content: "";
         display: block;
         background: #ffffff;
@@ -392,7 +400,7 @@ div>a>img{
         transition: clip-path .3s;
     }
     
-    .nav-item:hover{
+    .nav-item-desk:hover{
         --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     
     }
